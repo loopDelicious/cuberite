@@ -89,17 +89,3 @@ void cSplashPotionEntity::Splash(Vector3d a_HitPos)
 		m_PotionColor
 	);
 }
-
-
-
-
-
-void cSplashPotionEntity::SpawnOn(cClientHandle & a_Client)
-{
-	a_Client.SendSpawnObject(*this, 73, m_PotionColor);
-	a_Client.SendEntityMetadata(*this);
-}
-
-
-
-

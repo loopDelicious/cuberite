@@ -161,16 +161,6 @@ void cArrowEntity::CollectedBy(cPlayer & a_Dest)
 
 
 
-void cArrowEntity::SpawnOn(cClientHandle & a_Client)
-{
-	a_Client.SendSpawnObject(*this, m_ProjectileKind, static_cast<int>(m_CreatorData.m_UniqueID + 1));
-	a_Client.SendEntityMetadata(*this);
-}
-
-
-
-
-
 void cArrowEntity::Tick(std::chrono::milliseconds a_Dt, cChunk & a_Chunk)
 {
 	Super::Tick(a_Dt, a_Chunk);

@@ -34,7 +34,6 @@ public:
 
 		AddFaceDirection(a_BlockX, a_BlockY, a_BlockZ, a_BlockFace);  // Make sure block that will be occupied is free
 		BLOCKTYPE Block = a_World->GetBlock(a_BlockX, a_BlockY, a_BlockZ);
-		AddFaceDirection(a_BlockX, a_BlockY, a_BlockZ, a_BlockFace, true);  // We want the clicked block, so go back again
 
 		if (Block == E_BLOCK_AIR)
 		{
